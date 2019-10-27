@@ -1,0 +1,9 @@
+[submodule "newlib"]
+	path = newlib
+	url = https://github.com/kalray/newlib.git
+[submodule "gdb-binutils"]
+	path = gdb-binutils
+	url = https://github.com/kalray/gdb-binutils.git
+[submodule "gcc"]
+	path = gcc
+	url = https://github.com/kalray/gcc.git
