@@ -1,5 +1,8 @@
 language: c
 
+git:
+  submodules_depth: 1
+
 env:
   global:
     - TARGET=k1-elf
@@ -17,11 +20,6 @@ install:
 
 before_script:
   - export PATH=$PATH:$PREFIX/bin
-
-#  - git clone --depth 1 -b coolidge https://github.com/kalray/gdb-binutils.git
-#  - git clone --depth 1 -b coolidge https://github.com/kalray/newlib.git
-#  - git clone --depth 1 -b coolidge https://github.com/kalray/gcc.git
-  - git submodule --init --recursive
 
   - mkdir build-binutils
   - cd build-binutils
